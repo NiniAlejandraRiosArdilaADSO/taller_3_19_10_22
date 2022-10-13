@@ -1,47 +1,26 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    // Calcule el mayor de tres números, permitiendo leer 3 valores diferentes.
+    // Cálculo de áreas - Elige una figura geométrica:" Triángulo y Círculo ¿Qué figura quiere calcular (Escriba T o C)? Triangulo = base * altura / 2 Circulo = PI * radio* radio
+console.log(`Elige una figura Triangulo o Cuadrado!`)
 
-    let numero1 =(prompt(`por favor escriba un numero : ` ,55))
+let opcion =(prompt(`Escriba t o c:  `)) 
 
-    let numero2 =(prompt(`por favor escriba un numero : ` ,50))
+if (opcion == `t`) {
+    console.log(`Triangulo = base * altura / 2 `)
+    let base = (prompt(`Ingrese la base de su triangulo : ` ,23))
+    let altura = (prompt(`Ingrese la altura de su triamgulo : `, 12))
+    let trg = base*altura/2
+    console.log (`El area de su triangulo es ${trg} `)
+}
 
-    let numero3 =(prompt(`por favor escriba un numero : ` ,29))
-// MAYORES
-if (numero1 > numero2 && numero1 > numero3 ) {
-    console.log(`El numero ${numero1} es el mayor`)
-    }
-else if (numero2 > numero1 && numero2 > numero3) {
-    console.log(`El numero ${numero2} es el mayor `)
-    }
 else {
-    console.log(`El numero ${numero3} es el mayor`)
-    }
-// MENORES
+    if (opcion == `c`) {
+        Math.PI
+        console.log(`PI*radio^2`)
+        let radio = (prompt(`Ingrese el radio de su circulo :`  , 44))
+        let cir = (Math.PI) * Math.pow(radio, 2)
+        console.log(`El area de su circulo es  ${cir}`)
 
-if (numero1 < numero2 && numero1<numero3) {
-    console.log(`El numero ${numero1} es el menor` )
-}
-else if (numero2 < numero1 && numero2 < numero3) {
-    console.log(`El numero ${numero2} es el menor` )
-}
-else {
-    console.log(`El numero ${numero3} es el menor` )
-}
-// IGUALES
-
-if (numero1 == numero2 ) {
-    console.log(`El numero 1 y 2 son iguales ` )
-}
-else if (numero2 == numero3) {
-    console.log(`El numero 2 y 3 son iguales `)
-}
-else {
-    if (numero1 == numero2 == numero3) {
-        console.log(`Los 3 numeros son iguales`)
-    }
-    else if (numero1 == numero3) {
-        console.log(`El numero 1 y 3 son iguales`)
     }
 }
-
 })
+
