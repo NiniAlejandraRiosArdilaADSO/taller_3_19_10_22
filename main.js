@@ -1,13 +1,20 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    // Determinar si un número es positivo y menor que 100.
+    // Calcule el mayor de tres números, permitiendo leer 3 valores diferentes.
 
-    let numero =(prompt(`por favor esscriba un numero : ` ,95))
+    let numero1 =(prompt(`por favor escriba un numero : ` ,95))
 
-    if (numero <= 100 ) {
-        console.log(`su numero es menor que 100`)
+    let numero2 =(prompt(`por favor escriba un numero : ` ,50))
+
+    let numero3 =(prompt(`por favor escriba un numero : ` ,20))
+
+    if (numero1 > numero2 && numero1 > numero3 ) {
+        console.log(`El numero ${numero1} es el mayor`)
     }
-    else if (numero > 100 ) {
-        console.log(`su numero es mayor a 100`)
+    else if (numero2 > numero1 && numero2 > numero3) {
+        console.log(`El numero ${numero2} es el mayor `)
+    }
+    else {
+        console.log(`El numero ${numero3} es el mayor`)
     }
 
 
