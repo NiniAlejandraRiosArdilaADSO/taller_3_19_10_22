@@ -1,38 +1,38 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    // Considere dos variables llamadas temperatura y presión. Escriba una sentencia if-else que muestreen pantalla la palabra Alarma si la variable presión es mayor a 200 o si la variable temperatura es mayor a 100. En caso contrario, se debe mostrar en pantalla la palabra Normal.
+//  Calcular todos los pagos hechos de un restaurante y que si el consumo ingresado excede los $130.000 el descuento será del 15%, de lo contrario no hay descuento
 
-console.log(`indique si desea registrar la (p)presion o (t)temperatura`)
+let condicion =`si`
 
-let pregunta =(prompt(`Indique p o t `)) 
+let total = 0
 
 // CONDICIONES
 
-if (pregunta == `p`) {
+while (condicion == `si`) {
     
-    let presion = (prompt(`Ingrese el numero de la presion : `,200))
+    let a = (prompt(`Ingrese el valor del producto : ` ,45))
+
+    let total1= total+a
+
+    let condicion = (prompt(`Quieres añadir un producto mas ?`))
+
+
+    if (total > 130000 ) {
     
-    if (presion > 200) {
-        console.log (`ALARMA!! Revise su presion `)
-    }
+        let descuento = total - (total * 0.15)
+        let descuento2 = total - descuento
 
-    else {
-        console.log(`La presion esta normal y ya se guardaron tus datos `)
-    }
-    }
-if (pregunta == `t`) {
+        console.log (`Su compra fue mayor de 130000 usted cuenta con el descuento de 15 %`)
 
-    let temperatura = (prompt(`Ingrese su temperatura ` ,37))
+        console.log (`El valor de su compra era:  ${total1}`)
 
-    if (temperatura >= 40) {
-        
-        console.log (`¡CUIDADO! su temperatura esta muy alta `)
+        console.log (`El valor con el descuento es:  ${descuento}`)
 
-    }
+        console.log (`Su descuento fue de ${descuento2}`)
 
-    else {
-
-        console.log (`La tempratura esta normal y ya fue guardada `)
-    }
+    } else {
+    
+        console.log (`El valor de su compra es :  ${total1}`)
+}
 
 }
 
