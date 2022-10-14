@@ -3,18 +3,38 @@ addEventListener(`DOMContentLoaded`, ()=>{
 
 console.log(`indique si desea registrar la (p)presion o (t)temperatura`)
 
-let presion =(prompt(`Indique P o T `)) 
+let pregunta =(prompt(`Indique p o t `)) 
 
 // CONDICIONES
 
-if (presion == `p`) {
+if (pregunta == `p`) {
     
     let presion = (prompt(`Ingrese el numero de la presion : `,200))
     
     if (presion > 200) {
-        console.log (prompt(`ALARMA!! se aconseja que revise la presion`))
+        console.log (`ALARMA!! Revise su presion `)
+    }
+
+    else {
+        console.log(`La presion esta normal y ya se guardaron tus datos `)
     }
     }
+if (pregunta == `t`) {
+
+    let temperatura = (prompt(`Ingrese su temperatura ` ,37))
+
+    if (temperatura >= 40) {
+        
+        console.log (`¡CUIDADO! su temperatura esta muy alta `)
+
+    }
+
+    else {
+
+        console.log (`La tempratura esta normal y ya fue guardada `)
+    }
+
+}
 
 })
 
