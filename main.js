@@ -1,40 +1,25 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-//  Calcular todos los pagos hechos de un restaurante y que si el consumo ingresado excede los $130.000 el descuento será del 15%, de lo contrario no hay descuento
+    // En cierta empresa se les paga a sus trabajadores de la siguiente forma: si el empleado es de planta, la hora trabajada se le paga a $20000, si el empleado es administrativo, la hora trabajada se le paga a $10000. Para calcular su pago es necesario conocer el total de horas trabajadas. 
 
-let condicion =`si`
+console.log (`Si el trabajador es de planta ponga (p) o si es administrativo  ponga (a)`)
 
-let total = 0
+let pregunta =(prompt(`INDIQUE p O a `))
 
-// CONDICIONES
+// CONDICIONES  
 
-while (condicion == `si`) {
-    
-    let a = (prompt(`Ingrese el valor del producto : ` ,45))
+if (pregunta == `p`) {
+    let pagop =20000
+    let hp = (prompt(`cuantas horas trabajo `, 44))
+    let pago1 = hp*pagop
 
-    let total1= total+a
+    console.log(`EL TOTAL DEL PAGO POR HORAS ES ${pago1} PESOS `)
+} if (pregunta == `a`) {
+    let pagoa =10000
+    let ha =(prompt(`Cuantas horas trabajo `, 44))
+    let pago2 = ha*pagoa
 
-    let condicion = (prompt(`Quieres añadir un producto mas ?`))
-
-
-    if (total > 130000 ) {
-    
-        let descuento = total - (total * 0.15)
-        let descuento2 = total - descuento
-
-        console.log (`Su compra fue mayor de 130000 usted cuenta con el descuento de 15 %`)
-
-        console.log (`El valor de su compra era:  ${total1}`)
-
-        console.log (`El valor con el descuento es:  ${descuento}`)
-
-        console.log (`Su descuento fue de ${descuento2}`)
-
-    } else {
-    
-        console.log (`El valor de su compra es :  ${total1}`)
-}
-
-}
+    console.log(`EL TOTAL DEL PAGO ES ${pago2} PESOS`)
+} 
 
 })
 
