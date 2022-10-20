@@ -1,30 +1,27 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    // Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de los impares. Numero par es aquel que su residuo igual a cero (num mod !=0)
-const np =[];
-let pares= (document.createElement[]);
+     //Calcular el valor total del valor de 5 productos, el IVA y el subtotal, visualizar los resultados de Iva, Subtotal y Total de la compra de los artículos.
 
-let impares= (document.createElement[]);
+let prod1 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
 
-let n= (prompt(`ingrese la cantida de numeros que quiere ingresar: ` ,4))
+let prod2 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
 
-Range (`n`);
+let prod3 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
 
-let num= (document.createElemnt (prompt(`Ingresa un numero: `, 4)))
+let prod4 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
 
-if (num%2 !=0) {
-    impares.append(num)
-} else {
-    pares.append(num)
-}
+let prod5 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
 
-let sumPares= sum(pares)
+// operaciones
 
-let pimpa= np.prod(impares)
+let tol=(prod1+prod2+prod3+prod4+prod5)
+let iva =(prompt("coloque el valor del iva: ",3000))
+let vaiva = tol*iva
+let rest = tol+vaiva
 
-console.log (`el resultado de la operacion de los numeros pares es : ${sumPares}`)
+console.log(`EL VALOR DEL PRODUCTO CON EL IVA ES : ${rest}`)
 
-console.log(`el resultado de la operacion de los numeros es :  ${pimpa}`)
+console.log(`EL SUB VALOR ES DE : ${tol}`)
 
+console.log(`VALOR DEL IVA : ${vaiva}`)
 
 })
-
