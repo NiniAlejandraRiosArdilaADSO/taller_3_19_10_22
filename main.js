@@ -1,27 +1,35 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-     //Calcular el valor total del valor de 5 productos, el IVA y el subtotal, visualizar los resultados de Iva, Subtotal y Total de la compra de los artículos.
+    //Programa para solicitar el nombre, apellido, edad y la nota promedio de 5 estudiantes de un curso de computación
 
-let prod1 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
+let nombre =(prompt(`INGRESE SU NOMBRE : `,`nini`));
 
-let prod2 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
+let apellido = (prompt(`INGRESE SU APELLIDO : `,`Rios`));
 
-let prod3 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
+let edad = (prompt(`INGRESE SU EDAD : `, 17));
 
-let prod4 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
+let n1 =(prompt(`INGRESE SU NOTA 1: `,5))
 
-let prod5 =(prompt(`COLOQUE EL VALOR DEL PRODUCTO : `, 2500))
+let n2 =(prompt(`INGRESE SU NOTA 2: `,5))
 
-// operaciones
+let n3 =(prompt(`INGRESE SU NOTA 3: `,3))
 
-let tol=(prod1+prod2+prod3+prod4+prod5)
-let iva =(prompt("coloque el valor del iva: ",3000))
-let vaiva = tol*iva
-let rest = tol+vaiva
+let n4 =(prompt(`INGRESE SU NOTA 4: `,2))
 
-console.log(`EL VALOR DEL PRODUCTO CON EL IVA ES : ${rest}`)
+let n5 =(prompt(`INGRESE SU NOTA 5: `,4))
 
-console.log(`EL SUB VALOR ES DE : ${tol}`)
+//operacion
 
-console.log(`VALOR DEL IVA : ${vaiva}`)
+let prome = (n1+n2+n3+n4+n5)/5
+
+if (prome >= 5) {
+    
+    console.log(`FELICIDADES APROBO `)
+} else {
+    
+    console.log(`NO APROBADO`)
+}
+console.log(`Nombre : ${nombre} ${apellido}  
+edad : ${edad}`)
+console.log (`EL PROMEDIO DE SUS NOTAS ES : ${prome}`)
 
 })
