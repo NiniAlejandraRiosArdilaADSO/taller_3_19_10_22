@@ -1,25 +1,30 @@
 addEventListener(`DOMContentLoaded`, ()=>{
-    // En cierta empresa se les paga a sus trabajadores de la siguiente forma: si el empleado es de planta, la hora trabajada se le paga a $20000, si el empleado es administrativo, la hora trabajada se le paga a $10000. Para calcular su pago es necesario conocer el total de horas trabajadas. 
+    // Realizar el algoritmo que lea N números, calcule y escriba la suma de los pares y el producto de los impares. Numero par es aquel que su residuo igual a cero (num mod !=0)
+const np =[];
+let pares= (document.createElement[]);
 
-console.log (`Si el trabajador es de planta ponga (p) o si es administrativo  ponga (a)`)
+let impares= (document.createElement[]);
 
-let pregunta =(prompt(`INDIQUE p O a `))
+let n= (prompt(`ingrese la cantida de numeros que quiere ingresar: ` ,4))
 
-// CONDICIONES  
+Range (`n`);
 
-if (pregunta == `p`) {
-    let pagop =20000
-    let hp = (prompt(`cuantas horas trabajo `, 44))
-    let pago1 = hp*pagop
+let num= (document.createElemnt (prompt(`Ingresa un numero: `, 4)))
 
-    console.log(`EL TOTAL DEL PAGO POR HORAS ES ${pago1} PESOS `)
-} if (pregunta == `a`) {
-    let pagoa =10000
-    let ha =(prompt(`Cuantas horas trabajo `, 44))
-    let pago2 = ha*pagoa
+if (num%2 !=0) {
+    impares.append(num)
+} else {
+    pares.append(num)
+}
 
-    console.log(`EL TOTAL DEL PAGO ES ${pago2} PESOS`)
-} 
+let sumPares= sum(pares)
+
+let pimpa= np.prod(impares)
+
+console.log (`el resultado de la operacion de los numeros pares es : ${sumPares}`)
+
+console.log(`el resultado de la operacion de los numeros es :  ${pimpa}`)
+
 
 })
 
